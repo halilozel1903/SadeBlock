@@ -1,0 +1,17 @@
+name: Build and validate
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  macos:
+    runs-on: macos-14
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the macOS app and Safari extension
+        run: xcodebuild -project SadeBlock.xcodeproj -scheme SadeBlock -configuration Release -derivedDataPath build CODE_SIGNING_ALLOWED=NO build
+      - name: Compile rules with WebKit and check URL boundaries
+        run: swift Tests/ValidateRules.swift Blocker/blockerList.json

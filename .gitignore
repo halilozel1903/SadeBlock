@@ -1,0 +1,13 @@
+.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.app
+*.appex
+*.dSYM/
+*.zip
+*.p12
+*.mobileprovision
+*.provisionprofile
+.env
