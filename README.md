@@ -13,15 +13,15 @@
 
 SadeBlock combines a small, inspectable ruleset with a SwiftUI companion app. Safari applies the blocking rules; the app helps you check extension status and reload the bundled filters. There are no accounts, analytics SDKs, external package dependencies, or subscription services.
 
-> **Early-stage project:** SadeBlock currently ships 68 manually maintained rules. It is a starting point for native Safari ad blocking, not a comprehensive or automatically updated filter subscription. YouTube and other in-video ads are not guaranteed to be blocked.
+> **Early-stage project:** SadeBlock currently ships 126 manually maintained rules. It is a starting point for native Safari ad blocking, not a comprehensive or automatically updated filter subscription. YouTube and other in-video ads are not guaranteed to be blocked.
 
 [Get started](#getting-started) · [How it works](#how-it-works) · [Limitations](#limitations) · [Contribute](CONTRIBUTING.md)
 
 ## Features
 
 - **Native Safari content blocking:** declarative rules handled by Safari, with no injected JavaScript from the extension.
-- **Ad and tracker filtering:** 67 domain rules target third-party requests to selected advertising and tracking services.
-- **Cosmetic filtering:** one rule hides known ad placements, including Google ad slots, Taboola widgets, and Outbrain containers.
+- **Ad and tracker filtering:** 124 domain rules target third-party requests to advertising, header-bidding (Prebid) and tracking services, including Google Ad Manager, Yandex and Turkish ad networks such as Mediazone and Admatic.
+- **Cosmetic filtering:** a generic rule hides Google Ad Manager/AdSense slots (including sticky anchor ads), Yandex, Taboola and Outbrain widgets; a site-specific rule cleans up webtekno.com ad columns and sponsored links.
 - **Private by design:** no browsing-history access, request logging, telemetry, or collection endpoints.
 - **Native macOS interface:** an English SwiftUI dashboard shows Safari’s reported activation state and provides rule reloading.
 - **Readable source:** the complete filter list is a version-controlled JSON file you can inspect and edit.
@@ -72,7 +72,9 @@ open build/Build/Products/Release/SadeBlock.app
 3. Return to the app and refresh its status.
 4. Reload open webpages so Safari can apply the rules.
 
-**If SadeBlock does not appear:** the project uses ad-hoc signing for local development. Enable web developer features in **Safari → Settings → Advanced**, then select **Allow unsigned extensions** in Safari’s developer settings. This permits unsigned extensions to run and may need to be enabled again after restarting Safari. Menu names can vary by Safari version. See [Apple’s extension development instructions](https://developer.apple.com/documentation/safariservices/building-a-safari-app-extension).
+**Signing:** both targets use automatic signing. Before the first run, open each target (**SadeBlock** and **SadeBlockBlocker**) → **Signing & Capabilities** and select the same **Team** (a free Personal Team works). Safari does not list extensions without a team signature.
+
+**If SadeBlock still does not appear:** run the app once, then check `pluginkit -mAvvv -p com.apple.Safari.content-blocker`. For unsigned local builds, enable **Allow unsigned extensions** in Safari's developer settings (it resets when Safari restarts). See [Apple’s extension development instructions](https://developer.apple.com/documentation/safariservices/building-a-safari-app-extension).
 
 ### 3. Check a website
 
@@ -133,7 +135,7 @@ The validation script:
 - Verifies that domain-blocking rules remain restricted to third-party requests.
 - Removes its temporary compiled rules after validation.
 
-The initial local Release build and all nine URL cases passed. These checks verify rule syntax and selected URL boundaries; they do **not** establish blocking effectiveness across live websites. Safari activation, visual filtering, and real-world site compatibility still require manual testing. GitHub Actions also builds the app and runs the rule validator on macOS.
+The initial local Release build and all URL cases passed. These checks verify rule syntax and selected URL boundaries; they do **not** establish blocking effectiveness across live websites. Safari activation, visual filtering, and real-world site compatibility still require manual testing. GitHub Actions also builds the app and runs the rule validator on macOS.
 
 ## Limitations
 
