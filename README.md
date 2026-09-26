@@ -11,13 +11,21 @@
 
 **A native, open-source Safari content blocker that blocks requests to known advertising and tracking services without reading your browsing history.**
 
-🌐 **Website:** [halilozel1903.github.io/SadeBlock](https://halilozel1903.github.io/SadeBlock/)
+**[Project website](https://halilozel1903.github.io/SadeBlock/)** · **[Source code](https://github.com/halilozel1903/SadeBlock)** · **[Report an issue](https://github.com/halilozel1903/SadeBlock/issues)**
 
 SadeBlock combines a small, inspectable ruleset with a SwiftUI companion app. Safari applies the blocking rules; the app helps you check extension status and reload the bundled filters. There are no accounts, analytics SDKs, external package dependencies, or subscription services.
 
 > **Early-stage project:** SadeBlock currently ships 126 manually maintained rules. It is a starting point for native Safari ad blocking, not a comprehensive or automatically updated filter subscription. YouTube and other in-video ads are not guaranteed to be blocked.
 
 [Get started](#getting-started) · [How it works](#how-it-works) · [Limitations](#limitations) · [Contribute](CONTRIBUTING.md)
+
+## Preview
+
+| Before | With SadeBlock |
+| --- | --- |
+| ![Sample article with an illustrated ad and tracker request](docs/assets/preview-before.svg) | ![The same sample article with the illustrated ad and tracker request blocked](docs/assets/preview.svg) |
+
+These are **illustrations of the same sample page**, not screenshots of a live website or proof of blocking on every site. See the [project website](https://halilozel1903.github.io/SadeBlock/) for a larger preview.
 
 ## Features
 
@@ -35,10 +43,10 @@ SadeBlock combines a small, inspectable ruleset with a SwiftUI companion app. Sa
 | Operating system | macOS 13 Ventura or later |
 | Browser | Safari on macOS |
 | Development | Xcode 15 or later with the macOS SDK |
-| Local testing | Ad-hoc signing and Safari’s unsigned-extension development setting may be required |
+| Local testing | Select the same Apple development team for both Xcode targets; unsigned builds need Safari’s development setting |
 | Distribution | Appropriate Apple signing and distribution setup; this repository is not an App Store release |
 
-The minimum Xcode version follows the APIs and project format used here; the initial local build was verified with the installed Swift 6.4 toolchain. The workflow above reports compatibility with the hosted macOS runner.
+The project is built and validated in [GitHub Actions](https://github.com/halilozel1903/SadeBlock/actions/workflows/ci.yml) on a macOS runner.
 
 ## Getting started
 
@@ -52,7 +60,7 @@ cd SadeBlock
 open SadeBlock.xcodeproj
 ```
 
-Select the **SadeBlock** scheme and **My Mac**, then choose **Product → Run**.
+Under **Signing & Capabilities**, select the same Apple development team for both **SadeBlock** and **SadeBlockBlocker**. A free Personal Team can be used for local development. Then select the **SadeBlock** scheme and **My Mac**, and choose **Product → Run**.
 
 Alternatively, build from the command line:
 
@@ -74,9 +82,7 @@ open build/Build/Products/Release/SadeBlock.app
 3. Return to the app and refresh its status.
 4. Reload open webpages so Safari can apply the rules.
 
-**Signing:** both targets use automatic signing. Before the first run, open each target (**SadeBlock** and **SadeBlockBlocker**) → **Signing & Capabilities** and select the same **Team** (a free Personal Team works). Safari does not list extensions without a team signature.
-
-**If SadeBlock still does not appear:** run the app once, then check `pluginkit -mAvvv -p com.apple.Safari.content-blocker`. For unsigned local builds, enable **Allow unsigned extensions** in Safari's developer settings (it resets when Safari restarts). See [Apple’s extension development instructions](https://developer.apple.com/documentation/safariservices/building-a-safari-app-extension).
+**If SadeBlock does not appear:** first run the companion app and check that both targets use the same development team. For an unsigned local build, enable **Allow unsigned extensions** in Safari’s developer settings; Safari may reset that setting when it restarts. For further diagnosis, run `pluginkit -mAvvv -p com.apple.Safari.content-blocker`. See [Apple’s extension development instructions](https://developer.apple.com/documentation/safariservices/building-a-safari-app-extension).
 
 ### 3. Check a website
 
@@ -133,7 +139,7 @@ swift Tests/ValidateRules.swift Blocker/blockerList.json
 The validation script:
 
 - Compiles the entire ruleset with the real WebKit content-rule compiler.
-- Checks four representative ad/tracker URLs and five URLs that must not match.
+- Checks seven representative ad/tracker URLs and seven URLs that must not match.
 - Verifies that domain-blocking rules remain restricted to third-party requests.
 - Removes its temporary compiled rules after validation.
 
@@ -156,7 +162,7 @@ Blocker/                Safari extension, bundled rules, and extension configura
 Tests/                  WebKit compilation and URL-boundary checks
 SadeBlock.xcodeproj/     Xcode project and shared scheme
 .github/workflows/      macOS build and validation workflow
-docs/                   Repository artwork
+docs/                   Project website, preview artwork, and sharing assets
 ```
 
 ## Signing and distribution
