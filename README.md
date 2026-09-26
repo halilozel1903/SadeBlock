@@ -15,7 +15,7 @@
 
 SadeBlock combines a small, inspectable ruleset with a SwiftUI companion app. Safari applies the blocking rules; the app helps you check extension status and reload the bundled filters. There are no accounts, analytics SDKs, external package dependencies, or subscription services.
 
-> **Early-stage project:** SadeBlock currently ships 126 manually maintained rules. It is a starting point for native Safari ad blocking, not a comprehensive or automatically updated filter subscription. YouTube and other in-video ads are not guaranteed to be blocked.
+> **Early-stage project:** SadeBlock currently ships 129 manually maintained rules. It is a starting point for native Safari ad blocking, not a comprehensive or automatically updated filter subscription. YouTube and other in-video ads are not guaranteed to be blocked.
 
 [Get started](#getting-started) · [How it works](#how-it-works) · [Limitations](#limitations) · [Contribute](CONTRIBUTING.md)
 
@@ -30,7 +30,7 @@ These are **illustrations of the same sample page**, not screenshots of a live w
 ## Features
 
 - **Native Safari content blocking:** declarative rules handled by Safari, with no injected JavaScript from the extension.
-- **Ad and tracker filtering:** 124 domain rules target third-party requests to advertising, header-bidding (Prebid) and tracking services, including Google Ad Manager, Yandex and Turkish ad networks such as Mediazone and Admatic.
+- **Ad and tracker filtering:** 127 domain rules target third-party requests to advertising, header-bidding (Prebid) and tracking services, including Google Ad Manager, Yandex and Turkish ad networks such as Mediazone, Admatic and Virgül.
 - **Cosmetic filtering:** a generic rule hides Google Ad Manager/AdSense slots (including sticky anchor ads), Yandex, Taboola and Outbrain widgets; a site-specific rule cleans up webtekno.com ad columns and sponsored links.
 - **Private by design:** no browsing-history access, request logging, telemetry, or collection endpoints.
 - **Native macOS interface:** an English SwiftUI dashboard shows Safari’s reported activation state and provides rule reloading.

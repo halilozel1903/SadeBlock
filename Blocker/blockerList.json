@@ -276,6 +276,17 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?advertune\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?adyoulike\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -892,6 +903,17 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?openxcdn\\.net(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?outbrain\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -1310,6 +1332,17 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?virgul\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?yieldlab\\.net(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -1369,7 +1402,7 @@
     },
     "action": {
       "type": "css-display-none",
-      "selector": "ins.adsbygoogle, .adsbygoogle, [id^=\"google_ads_iframe\"], [id^=\"google_ads_\"], [id^=\"div-gpt-ad\"], [data-google-query-id], iframe[src*=\"googlesyndication.com\"], iframe[src*=\"doubleclick.net\"], [id^=\"yandex_rtb\"], .taboolaWidget, .trc_rbox_container, .OUTBRAIN, .ob-widget, [data-ad-slot]"
+      "selector": "ins.adsbygoogle, .adsbygoogle, [id^=\"google_ads_iframe\"], [id^=\"google_ads_\"], [id^=\"div-gpt-ad\"], [data-google-query-id], iframe[src*=\"googlesyndication.com\"], iframe[src*=\"doubleclick.net\"], [id^=\"yandex_rtb\"], .taboolaWidget, .trc_rbox_container, .OUTBRAIN, .ob-widget, [data-ad-slot], .empower-ad, .virgul-ad"
     }
   },
   {
