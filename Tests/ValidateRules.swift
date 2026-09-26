@@ -14,7 +14,7 @@ let filters = rules.compactMap { rule -> NSRegularExpression? in
 func matches(_ url: String) -> Bool {
     filters.contains { $0.firstMatch(in: url, range: NSRange(url.startIndex..., in: url)) != nil }
 }
-for url in ["https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", "https://ad.doubleclick.net/ad.js", "https://ads.pubmatic.com:443/ad", "https://www.google-analytics.com/collect", "https://securepubads.g.doubleclick.net/tag/js/gpt.js", "https://s2.mdznads.com/webtekno.com.js", "https://an.yandex.ru/system/context.js"] {
+for url in ["https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", "https://ad.doubleclick.net/ad.js", "https://ads.pubmatic.com:443/ad", "https://www.google-analytics.com/collect", "https://securepubads.g.doubleclick.net/tag/js/gpt.js", "https://s2.mdznads.com/webtekno.com.js", "https://an.yandex.ru/system/context.js", "https://static.virgul.com/theme/mockups/ads/bigmedya.js", "https://6a8f1730ee3554e9ffb92f88-bmag_tr.advertune.com/adview"] {
     precondition(matches(url), "Missed ad URL: \(url)")
 }
 for url in ["https://example.com/?next=doubleclick.net/ad", "https://notdoubleclick.net/a", "https://doubleclick.net.example.com/a", "https://www.google.com/search?q=hello", "https://cdn.example.com/image.jpg", "https://www.webtekno.com/", "https://yandex.ru/search"] {
@@ -28,7 +28,7 @@ WKContentRuleListStore.default().compileContentRuleList(forIdentifier: id, encod
     }
     WKContentRuleListStore.default().removeContentRuleList(forIdentifier: id) { error in
         guard error == nil else { exit(1) }
-        print("PASS: \(rules.count) rules compiled by WebKit; 14 positive/negative URL cases passed.")
+        print("PASS: \(rules.count) rules compiled by WebKit; 16 positive/negative URL cases passed.")
         exit(0)
     }
 }
