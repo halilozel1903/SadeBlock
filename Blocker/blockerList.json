@@ -1,6 +1,50 @@
 [
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?33across\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?360yield\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?3lift\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?adagio\\.io(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?adcash\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -34,6 +78,72 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?adfox\\.ru(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?adfox\\.yandex\\.ru(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?adhese\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?adition\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?adkernel\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?admatic\\.com\\.tr(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?adnxs\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -46,6 +156,17 @@
   {
     "trigger": {
       "url-filter": "^https?://([^/]+\\.)?adroll\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?adsafeprotected\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -133,7 +254,40 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?adtrafficquality\\.google(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?advertising\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?adyoulike\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?agkn\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -155,6 +309,17 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?an\\.yandex\\.ru(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?atdmt\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -166,7 +331,40 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?bidr\\.io(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?bidswitch\\.net(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?bidvertiser\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?bluekai\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -221,6 +419,17 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?creativecdn\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?criteo\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -243,6 +452,17 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?crwdcntrl\\.net(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?d\\.adroll\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -254,7 +474,62 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?demdex\\.net(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?doubleclick\\.net(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?doubleverify\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?e-planning\\.net(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?effectivemeasure\\.net(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?everesttech\\.net(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -277,6 +552,28 @@
   {
     "trigger": {
       "url-filter": "^https?://([^/]+\\.)?fullstory\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?fundingchoicesmessages\\.google\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?gemius\\.pl(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -310,6 +607,17 @@
   {
     "trigger": {
       "url-filter": "^https?://([^/]+\\.)?googlesyndication\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?googletagmanager\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -375,6 +683,50 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?id5-sync\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?idealmedia\\.io(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?imasdk\\.googleapis\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?improvedigital\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?indexww\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -397,7 +749,51 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?liadm\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?lijit\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?mathtag\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?mc\\.yandex\\.ru(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?mdznads\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -430,7 +826,40 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?missena\\.io(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?moatads\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?mouseflow\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?onetag-sys\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -474,6 +903,17 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?outbrainimg\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?popads\\.net(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -486,6 +926,17 @@
   {
     "trigger": {
       "url-filter": "^https?://([^/]+\\.)?popcash\\.net(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?projectagora\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -529,6 +980,28 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?reklamstore\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?reklamup\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?revcontent\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -541,6 +1014,39 @@
   {
     "trigger": {
       "url-filter": "^https?://([^/]+\\.)?revenuehits\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?richaudience\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?rlcdn\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?rtbhouse\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -573,6 +1079,17 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?seedtag\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?serving-sys\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -595,7 +1112,40 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?smaato\\.net(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?smartadserver\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?smartclip\\.net(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?sonobi\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -639,6 +1189,17 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?stickyadstv\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?taboola\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -661,6 +1222,28 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?tapad\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?teads\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?teads\\.tv(:[0-9]+)?/",
       "load-type": [
         "third-party"
@@ -673,6 +1256,17 @@
   {
     "trigger": {
       "url-filter": "^https?://([^/]+\\.)?trafficjunky\\.net(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?tremorhub\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -727,7 +1321,40 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?yieldlove-ad-serving\\.net(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?yieldlove\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://([^/]+\\.)?yieldmo\\.com(:[0-9]+)?/",
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([^/]+\\.)?zemanta\\.com(:[0-9]+)?/",
       "load-type": [
         "third-party"
       ]
@@ -742,7 +1369,19 @@
     },
     "action": {
       "type": "css-display-none",
-      "selector": "ins.adsbygoogle, [id^=\"google_ads_iframe\"], [id^=\"div-gpt-ad\"], .taboolaWidget, .OUTBRAIN, [data-ad-slot]"
+      "selector": "ins.adsbygoogle, .adsbygoogle, [id^=\"google_ads_iframe\"], [id^=\"google_ads_\"], [id^=\"div-gpt-ad\"], [data-google-query-id], iframe[src*=\"googlesyndication.com\"], iframe[src*=\"doubleclick.net\"], [id^=\"yandex_rtb\"], .taboolaWidget, .trc_rbox_container, .OUTBRAIN, .ob-widget, [data-ad-slot]"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "if-domain": [
+        "*webtekno.com"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": ".adv-col, #masthead-ad, #bant-ad, #listing-top-ad, #footer-ad, #sidebar-top-ad, [id^=\"sidebar-mid-\"][id$=\"-ad\"], [id^=\"sidebar-mid-\"][id*=\"-ad-\"], [data-post-url^=\"https://mdzn.io/\"], [data-post-url^=\"https://app.hb.biz/\"]"
     }
   }
 ]
