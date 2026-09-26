@@ -84,6 +84,8 @@ open build/Build/Products/Release/SadeBlock.app
 
 **If SadeBlock does not appear:** first run the companion app and check that both targets use the same development team. For an unsigned local build, enable **Allow unsigned extensions** in Safari’s developer settings; Safari may reset that setting when it restarts. For further diagnosis, run `pluginkit -mAvvv -p com.apple.Safari.content-blocker`. See [Apple’s extension development instructions](https://developer.apple.com/documentation/safariservices/building-a-safari-app-extension).
 
+**If SadeBlock appears more than once:** macOS lists the extension once for every copy of `SadeBlock.app` it has seen (Xcode's DerivedData, `build/`, `/Applications`, archives). Each build of the **SadeBlock** target now unregisters every copy except the one just built, so rebuilding once clears the extra entries. To keep a specific copy instead, run `scripts/unregister-stale-copies.sh /Applications/SadeBlock.app`, then restart Safari.
+
 ### 3. Check a website
 
 Compare a page with content blockers enabled and disabled using Safari’s settings for that website, reloading between checks. Coverage depends on the domains and ad placements in the bundled ruleset. SadeBlock does not display blocked-request counts because it does not observe your browsing traffic.
