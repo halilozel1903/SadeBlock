@@ -11,6 +11,8 @@
 
 **A native, open-source Safari content blocker that blocks requests to known advertising and tracking services without reading your browsing history.**
 
+🌐 **Website:** [halilozel1903.github.io/SadeBlock](https://halilozel1903.github.io/SadeBlock/)
+
 SadeBlock combines a small, inspectable ruleset with a SwiftUI companion app. Safari applies the blocking rules; the app helps you check extension status and reload the bundled filters. There are no accounts, analytics SDKs, external package dependencies, or subscription services.
 
 > **Early-stage project:** SadeBlock currently ships 126 manually maintained rules. It is a starting point for native Safari ad blocking, not a comprehensive or automatically updated filter subscription. YouTube and other in-video ads are not guaranteed to be blocked.
